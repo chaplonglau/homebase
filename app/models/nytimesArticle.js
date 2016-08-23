@@ -12,7 +12,7 @@ const NYtimesArticle = (function(){
       Store.nytimesArticles.push(this)
       console.log('Created new NYtimesArticle object')
     }
-  
+
 
   build(){
     $('#nyt-feed').append(`<li>
