@@ -12,7 +12,6 @@ class UserController {
 
   // UserController.prototype.createUser()
 
-
   usersPresent(){
     return Store.users.length != 0
     //If Store.users is not 0, returns true
@@ -35,7 +34,6 @@ class UserController {
     }
   }
 
-  //Why the hell isn't this function working?
   checkUserStore(users){
     $(users).each(function(){
       var searchName = name.toLowerCase()
@@ -56,7 +54,6 @@ class UserController {
 
     this.changeHomePage()
 
-    //I want to break these out
     jambaseEventController.init()
     restaurantListController.init(this.userZip)
     forecastController.init(this.userZip)
