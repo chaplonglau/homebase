@@ -7,9 +7,10 @@ class ForecastController {
   zipcodeAdapter(userZip){
      var latitude=0;
      var longitude=0; 
+     var googlekey=***REMOVED***
      $.ajax({
-       url : "http://maps.googleapis.com/maps/api/geocode/json?address=santa+cruz&components=postal_code:"+userZip+"&sensor=false",
-       method: "POST",
+       url : `https://maps.googleapis.com/maps/api/geocode/json?address=${userZip}&key=${googlekey}`,
+       method: "GET",
        success:function(data){
            latitude = data.results[0].geometry.location.lat;
            longitude= data.results[0].geometry.location.lng;
@@ -21,7 +22,7 @@ class ForecastController {
 
   forecastAdapter(latitude,longitude){
     $.ajax({
-       url : `https://api.forecast.io/forecast/${forecast_key}/${latitude},${longitude}`,
+       url : `https://api.darksky.net/forecast/ecbff86e585e71fff3e2365673363271/${latitude},${longitude}`,
        method: "GET"
     }).done(function(response){
       let daySummary=response.daily.summary

@@ -12,7 +12,7 @@ class twilioSendTextController {
         
         TwilioSMS.sendMessage(
           '+14087086249',
-          '+14082171539',
+          '+13475279841',
           `Hello! There is ${daySummary}. We will see temperatures up to ${dayTempMax} and down to ${dayTempMin}`,
 
           function ok() {
