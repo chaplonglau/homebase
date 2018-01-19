@@ -5,12 +5,6 @@ class nytimesController {
     this.nytimesAdapter()
   }
 
-  feedBuilder(){
-    for (var i=0; i<15; i++){
-        Store.nytimesArticles[i].build()
-    }
-  }
-
   nytimesAdapter(){
      var url = "https://api.nytimes.com/svc/mostpopular/v2/mostemailed/all-sections/30.json";
      url += '?' + $.param({
@@ -40,5 +34,11 @@ class nytimesController {
      }).fail(function(err) {
          throw err;
      });
+  }
+  
+  feedBuilder(){
+    for (var i=0; i<15; i++){
+        Store.nytimesArticles[i].build()
+    }
   } 
 } 
