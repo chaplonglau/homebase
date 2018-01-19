@@ -7,10 +7,7 @@ class UserController {
   init() {
     console.log('UserController.init() being called')
     this.checkExistingUsers()
-
   }
-
-  // UserController.prototype.createUser()
 
   usersPresent(){
     return Store.users.length != 0

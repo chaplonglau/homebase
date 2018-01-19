@@ -39,17 +39,9 @@ class ForecastController {
         <div class="col-md-9">
           <p> ${daySummary} Today Max: ${dayTempMax} Today Min: ${dayTempMin} </p> 
         </div>
-        <div class="col-md-3">
-          <input class="btn btn-secondary" id="send-text" type="submit" value="Get Weather Text">
-        </div>
     `)
      ForecastController.prototype.addTexterEventHandler(daySummary,dayTempMax,dayTempMin)
   }
-
-  addTexterEventHandler(daySummary,dayTempMax,dayTempMin) {
-    var twController= new twilioSendTextController();
-    twController.init(daySummary,dayTempMax,dayTempMin)
-  } 
 
 
 }
