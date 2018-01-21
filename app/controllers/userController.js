@@ -6,6 +6,7 @@ class UserController {
 
   init() {
     console.log('UserController.init() being called')
+    debugger
     this.checkExistingUsers()
   }
 

@@ -6,8 +6,6 @@ const Store = {
 }
 
 $(function() { // on document ready
-  textController = new twilioSendTextController()
-  textController.init()
   defaultPage()
 
   $('#log_out_link').click(defaultPage(), function(){

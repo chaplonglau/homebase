@@ -8,7 +8,7 @@ class nytimesController {
   nytimesAdapter(){
      var url = "https://api.nytimes.com/svc/mostpopular/v2/mostemailed/all-sections/30.json";
      url += '?' + $.param({
-         'api-key': 'd2fc8565b77c4cae9d1eb431e23eb2b5'
+         'api-key': ''
      });
      $.ajax({
          url: url,
