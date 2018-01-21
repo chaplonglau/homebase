@@ -7,7 +7,7 @@ class ForecastController {
   zipcodeAdapter(userZip){
      var latitude=0;
      var longitude=0; 
-     var googlekey=***REMOVED***
+     var googlekey= ""
      $.ajax({
        url : `https://maps.googleapis.com/maps/api/geocode/json?address=${userZip}&key=${googlekey}`,
        method: "GET",
@@ -22,7 +22,7 @@ class ForecastController {
 
   forecastAdapter(latitude,longitude){
     $.ajax({
-       url : `https://api.darksky.net/forecast/***REMOVED***/${latitude},${longitude}`,
+       url : `https://api.darksky.net/forecast/${forecastkey}/${latitude},${longitude}`,
        method: "GET"
     }).done(function(response){
       let daySummary=response.daily.summary

@@ -2,12 +2,11 @@ const NYtimesArticle = (function(){
   var counter = 0;
 
   return class {
-    constructor(url, byline, title, published_date, image) {
+    constructor(url, byline, title, published_date) {
       this.url = url
       this.byline = byline
       this.title = title
       this.published_date = published_date
-      this.image = image
 
       Store.nytimesArticles.push(this)
       console.log('Created new NYtimesArticle object')
@@ -29,10 +28,4 @@ const NYtimesArticle = (function(){
         </li>`)
     }
   }
-
-  // displayBuilder() {
-  //   //takes an object and creates all the necessary tags
-  //   //then appends all tags to DOM
-  //   //will eventually replace with Handlebars
-  // }
 }())
