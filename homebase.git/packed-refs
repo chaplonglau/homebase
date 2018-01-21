@@ -1,0 +1,12 @@
+# pack-refs with: peeled fully-peeled sorted 
+0242ad7fd859a594f7fd175152b4c92e3032bd43 refs/heads/bootstrap
+7833f5e1377d6c89711ec1c9060f026f421112e6 refs/heads/chap
+89cb74e610ba411711fb45c0afed08a8d7d9d47b refs/heads/master
+6a50599429e2f2993c58d601d462ceb088fb48cd refs/heads/opentable
+215433909dc0694a4b8f17a906dc46597fe34846 refs/heads/overlay-changes
+421bd43ee862954a47139d75a02ee58cd8dfed5c refs/heads/restaurant-list-arrays
+588c9b33c36b805a602831a1fa1b4b6e65e4ec65 refs/heads/tuesday-eight-am
+dc1c6925dabfc17999f5e74841767ec51d39fade refs/pull/1/head
+3aa5b289bbea66ee29842bfb3a4200545454baab refs/pull/2/head
+f350809ec5ebe9c3f2b345f17c15d2d91f3408a7 refs/pull/2/merge
+7833f5e1377d6c89711ec1c9060f026f421112e6 refs/pull/3/head
